@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int number, originalNumber, remainder, result = 0, n = 0;
+
+    printf("enter the number=");
+    scanf("%d", &number);
+
+    originalNumber = number;
+
+
+    int temp = number;
+    while (temp != 0) {
+        temp /= 10;
+        ++n;
+    }
+
+    temp = number;
+
+    while (temp != 0) {
+        remainder = temp % 10;
+        result += pow(remainder, n);
+        temp /= 10;
+    }
+
+
+    if (result == originalNumber)
+        printf("armstrong number\n");
+    else
+        printf("not armstrong number\n");
+
+    return 0;
+}
