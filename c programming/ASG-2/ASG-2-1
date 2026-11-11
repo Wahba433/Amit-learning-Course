@@ -1,1 +1,99 @@
+#include <stdio.h>
 
+int main(void)
+{
+    char operator;
+    float number_1, number_2, result;
+
+    printf("Enter number_1: ");
+    scanf("%f", &number_1);
+
+    printf("Enter operator (+, -, *, /): ");
+    scanf(" %c", &operator);
+
+    printf("Enter number_2: ");
+    scanf("%f", &number_2);
+
+    if (operator == '+')
+    {
+        result = number_1 + number_2;
+        printf("The result = %.2f\n", result);
+    }
+    else if (operator == '-')
+    {
+        result = number_1 - number_2;
+        printf("The result = %.2f\n", result);
+    }
+    else if (operator == '*')
+    {
+        result = number_1 * number_2;
+        printf("The result = %.2f\n", result);
+    }
+    else if (operator == '/')
+    {
+        if (number_2 != 0)
+        {
+            result = number_1 / number_2;
+            printf("The result = %.2f\n", result);
+        }
+        else
+        {
+            printf("Error: Cannot divide by zero!\n");
+        }
+    }
+    else
+    {
+        printf("Invalid operator!\n");
+    }
+
+    return 0;
+}#include <stdio.h>
+
+int main(void)
+{
+    char operator;
+    float number_1, number_2, result;
+
+    printf("Enter number_1: ");
+    scanf("%f", &number_1);
+
+    printf("Enter operator (+, -, *, /): ");
+    scanf(" %c", &operator);
+
+    printf("Enter number_2: ");
+    scanf("%f", &number_2);
+
+    if (operator == '+')
+    {
+        result = number_1 + number_2;
+        printf("The result = %.2f\n", result);
+    }
+    else if (operator == '-')
+    {
+        result = number_1 - number_2;
+        printf("The result = %.2f\n", result);
+    }
+    else if (operator == '*')
+    {
+        result = number_1 * number_2;
+        printf("The result = %.2f\n", result);
+    }
+    else if (operator == '/')
+    {
+        if (number_2 != 0)
+        {
+            result = number_1 / number_2;
+            printf("The result = %.2f\n", result);
+        }
+        else
+        {
+            printf("Error: Cannot divide by zero!\n");
+        }
+    }
+    else
+    {
+        printf("Invalid operator!\n");
+    }
+
+    return 0;
+}
